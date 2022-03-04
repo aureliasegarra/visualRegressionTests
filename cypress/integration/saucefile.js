@@ -5,7 +5,7 @@ describe('Testing landing page', () => {
         cy.visit('https://www.saucedemo.com/');
     });
 
-    it('Should load the page correctly', () => {
-        cy.matchImageSnapshot();
+    it('The logo should display correctly', () => {
+        cy.get('.login_logo').matchImageSnapshot("Logo");
     });
  })
