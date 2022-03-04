@@ -2,6 +2,7 @@
 
 describe('Testing landing page', () => {
     beforeEach(() => {
+        cy.viewport('macbook-15');
         cy.visit('https://www.saucedemo.com/');
     });
 
